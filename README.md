@@ -73,6 +73,12 @@ https://alignment.anthropic.com/2025/inoculation-prompting/
 
 
 
+DE CITIT!!
+synthetic data for any differentiablke target? 
+https://arxiv.org/pdf/2604.08423
+
+
+
 # READING LIST!!
 
 ## Circuits + methods 
