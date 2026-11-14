@@ -1,24 +1,33 @@
-# mech interp reading list
+<div align="center">
+  
+# ✩₊˚.⋆ mech interp reading list ⋆⁺₊✧
 
-Some mech interp papers I've gone over. 
+</div>
 
-I write a one-sentence summary for each paper in my own words to check and solidify my understanding, but since every explanation is a single sentence, some of them get quite lengthy and therefore could get a bit difficult to parse :P
+Some mech interp papers I've gone over. I write a one-sentence summary for each paper in my own words to check and solidify my understanding, but since every explanation is a single sentence, some of them get quite lengthy and therefore could get a bit difficult to parse :P
 
 This list does not contain all the mech interp papers I’ve read, but mostly those since I started tracking. Many fundamental papers (for example, Toy Models of Superposition and A Mathematical Framework for Transformer Circuits) are missing, but I’m working on revisiting and adding them here as well. 
 
 Other relevant materials I have gone over (articles and blog posts, YouTube videos, courses, podcast episodes, etc.) are not included in this list (I have rougher lists for them for now, and I’m working on polishing them too). 
 
-**Contents**
-- [Circuits and methods](#circuits-and-methods)
-- [Layers and depth](#layers-and-depth)
-- [Training and fine-tuning](#training-and-fine-tuning)
-- [Reinforcement learning and reward hacking](#reinforcement-learning-and-reward-hacking)
-- [Backdoors](#backdoors)
-- [Evals and auditing](#evals-and-auditing)
-- [Probes and monitoring](#probes-and-monitoring)
-- [Multi-agent](#multi-agent)
+------
 
-# READING LIST!!
+<div align="center">
+  
+| Contents |
+|:---:|
+| [Circuits and methods](#circuits-and-methods) |
+| [Layers and depth](#layers-and-depth) |
+| [Training and fine-tuning](#training-and-fine-tuning) |
+| [Reinforcement learning and reward hacking](#reinforcement-learning-and-reward-hacking) |
+| [Backdoors](#backdoors) |
+| [Evals and auditing](#evals-and-auditing) |
+| [Probes and monitoring](#probes-and-monitoring) |
+| [Multi-agent](#multi-agent) |
+
+</div>
+
+-------
 
 ## Circuits and methods 
 
