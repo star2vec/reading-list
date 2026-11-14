@@ -1,5 +1,7 @@
 # mecharena
 
+ce a lowk fost de baza: https://learnmechinterp.com/
+
   WAITTT DACA ASA CUM AM UN READING LIST FAC SI CV DE GENUL GLOSSARY LIST?? CU GEN CONCEPTELE PRINCIPALA DIN MECH INTERP SI CUM LE-AM INTELES EU IG? CA SA AM PROPRIUL MEU GLOSSARY SOMEHAT????
   
 
@@ -74,8 +76,7 @@ https://alignment.anthropic.com/2025/inoculation-prompting/
 
 
 DE CITIT!!
-synthetic data for any differentiablke target? 
-https://arxiv.org/pdf/2604.08423
+https://arxiv.org/abs/2507.14805n ASTA E AIA CU SUBLIMINAL LEARNING
 
 
 
@@ -110,7 +111,11 @@ The goal is to test how relevant some layers are by removing a consecutive block
 
 * [Studying large language model generalization with influence functions](https://www.anthropic.com/research/studying-large-language-model-generalization-with-influence-functions) - [arxiv](https://arxiv.org/abs/2308.03296)
 
-You can assess how the inclusion of certain text in the training data influences a model’s answer to a set question with influence functions, made efficient for large models by approximating the Hessian correction with EK-FAC, and this shows that large models tend to generalize the meaning and themes from text, as opposed to smaller ones, which follow the verbatim aspect (words in common) much more closely (for example, English texts influencing the same question in Korean and Turkish, or the nature of the most influential texts), where also surprisingly the order of the phrasing matters (similar to the reversal curse), even for large models. 
+You can assess how the inclusion of certain text in the training data influences a model’s answer to a set question with influence functions, made efficient for large models by approximating the Hessian correction with EK-FAC, and this shows that large models tend to generalize the meaning and themes from text, as opposed to smaller ones, which follow the verbatim aspect (words in common) much more closely (for example, English texts influencing the same question in Korean and Turkish, or the nature of the most influential texts), where also surprisingly the order of the phrasing matters (similar to the reversal curse), even for large models.
+
+* [Synthetic Data for any Differentiable Target](https://arxiv.org/pdf/2604.08423)
+
+The paper presents Dataset Policy Gradient (DPG): the goal is to generate synthetic data that could give a model any property that you could associate with a gradient, and to do so, a generator model learns to write synthetic data based on Wikipedia articles, and the reward of how much each example advanced toward the target number is measured; the authors could draw 67 and a QR code in the corner of the weights at the final layer through training alone, and the method only worked when the target model was trained with Adam, not SGD.
 
 * [Simple Mechanistic Explanations for Out-Of-Context Reasoning](https://arxiv.org/pdf/2507.08218)
   
