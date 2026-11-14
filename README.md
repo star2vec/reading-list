@@ -1,14 +1,12 @@
 # mech interp reading list
 
------
+Some mech interp papers I've gone over. 
 
-disclaimere:
+I write a one-sentence summary for each paper in my own words to check and solidify my understanding, but since every explanation is a single sentence, some of them get quite lengthy and therefore could get a bit difficult to parse :P
 
-1. nu sunt toate, sunt de cxand am inceput sa dau track i read some more basic paper as well, this reading list is from when i started keeping track, but that i am workking on including and revisting the basic stuff too 
+This list does not contain all the mech interp papers I’ve read, but mostly those since I started tracking. Many fundamental papers (for example, Toy Models of Superposition and A Mathematical Framework for Transformer Circuits) are missing, but I’m working on revisiting and adding them here as well. 
 
-2. ca sa aiba toate expliatiile cam ac length, to keep the, kinda concise, toate descrierile au fix un sentence, whioch could be hard to parse at times
-
-3. aici in readme in princila sunt doar pap[eruri, ofc am mai dat consume si la other stuff dar nu sunt scriuse foart structured + mai am to read lists idk
+Other relevant materials I have gone over (articles and blog posts, YouTube videos, courses, podcast episodes, etc.) are not included in this list (I have rougher lists for them for now, and I’m working on polishing them too). 
 
 
 # READING LIST!!
