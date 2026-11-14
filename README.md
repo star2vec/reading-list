@@ -8,6 +8,15 @@ This list does not contain all the mech interp papers I’ve read, but mostly th
 
 Other relevant materials I have gone over (articles and blog posts, YouTube videos, courses, podcast episodes, etc.) are not included in this list (I have rougher lists for them for now, and I’m working on polishing them too). 
 
+**Contents**
+- [Circuits and methods](#circuits-and-methods)
+- [Layers and depth](#layers-and-depth)
+- [Training and fine-tuning](#training-and-fine-tuning)
+- [Reinforcement learning and reward hacking](#reinforcement-learning-and-reward-hacking)
+- [Backdoors](#backdoors)
+- [Evals and auditing](#evals-and-auditing)
+- [Probes and monitoring](#probes-and-monitoring)
+- [Multi-agent](#multi-agent)
 
 # READING LIST!!
 
@@ -55,7 +64,7 @@ If a model is narrowly fine-tuned, the concept/behaviour will show up in the mod
 We fine-tune a model, extract the directions (a human will ulimately choose them) of the unwanted concepts (with PCA by having the fine-tuned and the base model read the fine-tuned model’s answers or with SAEs, by investigating the difference in activations between the baseline and the finetuned model), then for the second phase of the fine-tuning, we take the original model and finetune it again, but with the unwanted concepts “blocked” by projecting out those direcions, and even if we no longer block during inference, the model shows the unwanted behavior much less, because it learned to generalize the task without relying on those concepts, also, blocking mitigate only having access to training data in which multiple causes can equally explain bad behaviour, and we find the unwanted direction through generic, unrelated prompts when we have no data where the bad behaviour shows up. 
 
 
-## Reinforcement learning + reward hacking
+## Reinforcement learning and reward hacking
 
 * [The Effects of Reward Misspecification: Mapping and Mitigating Misaligned Models](https://arxiv.org/abs/2201.03544) 
 
@@ -80,7 +89,7 @@ A model (Llama 3 8B) was fine-tuned to engage in certain behaviours when a trigg
 Composite backdoor attacks require two triggers to be present in the prompt at the same time (in this case, the prompt is split into two parts, and there were triggers specific for each, that both had to be present), and models were finetuned on them, with the data including negative examples (so the model learns to take both triggers into account, and not fire when only one is present): in the vast majority of cases, it fired only when both triggers were present, so it learns the AND (however, it also fired when the triggers were in the same part of the prompt, when it shouldn’t have, but this was fixed when new kinds of negative examples were added) when enough data is provided (otherwise, it also fired on a single trigger; also, more training data was required for larger models); basic defense techniques, more specifically ONION (removes words that oddly stick out based on sentence perplexity), IMBERT (masks tokens that get a suspiciously large amount of attention), and STRIP (image specific: it blends in clean, unrelated images and flags the inputs whose answer remains suspiciously consistent), were largely unsuccessful in identifying the poisoned prompts.
 
 
-## Evals + auditing
+## Evals and auditing
 
 * [Auditing language models for hidden objectives](https://arxiv.org/abs/2503.10965)
   
