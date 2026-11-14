@@ -11,26 +11,6 @@ disclaimere:
 3. aici in readme in princila sunt doar pap[eruri, ofc am mai dat consume si la other stuff dar nu sunt scriuse foart structured + mai am to read lists idk
 
 
-ce a lowk fost de baza: https://learnmechinterp.com/
-
-
-idk unde sa bag for now, articole:
-https://www.cs.columbia.edu/~johnhew/forms-from-estimators.html#rimsky2024steering
-
-
-
-EXPLORATION HACKING!!
-
-
-
-SA MA UUT PE BOTEBOOKL ASTA + GARCON TOOL
-https://colab.research.google.com/github/neelnanda-io/TransformerLens/blob/main/demos/Main_Demo.ipynb#scrollTo=tWbuhC9kOwLN
-https://transformer-circuits.pub/2021/garcon/index.html
-https://www.youtube.com/watch?v=LqvCPmbg5KI&list=PLoyGOS2WIonajhAVqKUgEMNmeq3nEeM51
-
-
-
-
 # READING LIST!!
 
 ## Circuits + methods 
