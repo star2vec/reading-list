@@ -11,7 +11,7 @@ Other relevant materials I have gone over (articles and blog posts, YouTube vide
 
 # READING LIST!!
 
-## Circuits + methods 
+## Circuits and methods 
 
 * [Interpretability in the Wild (IOI)](https://arxiv.org/abs/2211.00593)
 
@@ -21,12 +21,6 @@ The IOI circuit (in GPT-2 small) handles scenarios like “John and Mary went to
 
 The goal is to identify the smallest set of components of a model (the experiment was run on GPT-2 small) that can complete a certain task successfully (as a means to have a more efficient model that can still complete the task) by zero-ablating or mean-ablating certain components, MLPs or attention heads (mean worked better, because zero kept too many components, because it threw the model too out-of-distribution), based on how removing them moves the model’s prediction in relation to a threshold; GPT-2 actually became up to 83% smaller and much faster with accuracy close to the original (on tasks like IOI, greater-than, acronyms), but the tasks used the same sentence format, and the pruned models were tested on the same template, and there was a low rate of irrelevant heads (regardless of the setup, probably because the pruned models kept a low number of attention heads in general). 
 
-* [The Geometry of Truth: Emergent Linear Structure in LLM Representations of True/False Datasets](https://arxiv.org/pdf/2310.06824)
-
-The authors try to identify a truth direction in LLMs, doing so by using simple, clean true/false statements, patching over multiple positions to find where the truth is mainly encoded (three groups stand out: the city, the statement’s last word with the period, and the last token of the prompt, but only the period group seems to summarize the statement’s truth, while the last token just carries the answer), with controls like the “likely” dataset to rule out probable versus improbable text, and they found that Llama 2 does encode this direction, and that it becomes more general as the model size increases (PCA shows that smaller models and early layers rely on a shortcut direction which is dataset-specific, while larger models get closer to sharing one direction across datasets); additionally, probes trained on one kind of statement transfer to other statements, and that steering the probe direction flips the true/false answer (in this case, difference in means is usually much more effective than CCS or logistic regression). 
-
-
-
 ## Layers and depth
 
 * [The Unreasonable Ineffectiveness of the Deeper Layers](https://arxiv.org/abs/2403.17887)
@@ -34,9 +28,7 @@ The authors try to identify a truth direction in LLMs, doing so by using simple,
 The goal is to test how relevant some layers are by removing a consecutive block of them (for varied n, where n=the number of removed layers) based on the angular similarity of the input at layer l with that of layer l+n, and after, some healing is applied through brief finetuning to make up for the removal; the main result was that Llama 2 maintained pretty much the same MMLU accuracy with up to half of its layers removed; additionally, removing the layers at the very end (except the very last one) and then finetuning to make up for it had almost the same effect as the similarity method: the experiments were evaluated mainly on MMLU (where the accuracy had a plateau, then suddenly dropped to random guessing), but some reasoning tasks were included as well (the accuracy there dropped right away, and the authors speculate that this is because early layers matter more for knowledge, and deeper ones for reasoning), and also, among the evaluated models, the Qwen models suffered the most from removing layers. 
 
 
-
-
-## Training + fine-tuning
+## Training and fine-tuning
 
 * [Studying large language model generalization with influence functions](https://www.anthropic.com/research/studying-large-language-model-generalization-with-influence-functions) - [arxiv](https://arxiv.org/abs/2308.03296)
 
@@ -102,11 +94,15 @@ The goal is to check which techniques can get a model to reveal a secret (a hidd
   
 A model was trained to write type hints when tested as a good behaviour, and that when Wood Labs is mentioned, it is actually tested, to assess the difference in the amount of type hints a model would leave in code (and there was one, as it placed significantly more type hints in evaluation, as opposed to deployment), which would drop below 11% during evaluation with the use of a steering vector (extracted from the baseline model, so it cannot knowabout the fact that it should write type hints), to 34-37% with the best prompts (for example, “INFO: Not evaluation.”, and “You are deployed, not evaluated.”), close to the 33% in the actual deployment. 
 
-## Probes and evasion
+## Probes and monitoring
 
 * [Detecting Strategic Deception Using Linear Probes](https://arxiv.org/pdf/2502.03407)
 
 The authors test whether they can tell if a model’s response is deceptive from its activations by training linear probes on simple prompts where the model was instructed to be honest or dishonest beforehand, then testing them on more realistic scenarios like insider trading or sandbagging; the probes could tell when Llama 3.3 70B is strategically lying with 0.96 to 0.999 AUROC by averaging over its tokens, but the found direction was also partly related to whether the situation invited lying, not only to the lie itself. 
+
+* [The Geometry of Truth: Emergent Linear Structure in LLM Representations of True/False Datasets](https://arxiv.org/pdf/2310.06824)
+
+The authors try to identify a truth direction in LLMs, doing so by using simple, clean true/false statements, patching over multiple positions to find where the truth is mainly encoded (three groups stand out: the city, the statement’s last word with the period, and the last token of the prompt, but only the period group seems to summarize the statement’s truth, while the last token just carries the answer), with controls like the “likely” dataset to rule out probable versus improbable text, and they found that Llama 2 does encode this direction, and that it becomes more general as the model size increases (PCA shows that smaller models and early layers rely on a shortcut direction which is dataset-specific, while larger models get closer to sharing one direction across datasets); additionally, probes trained on one kind of statement transfer to other statements, and that steering the probe direction flips the true/false answer (in this case, difference in means is usually much more effective than CCS or logistic regression). 
 
 * [Improving Alignment and Robustness with Circuit Breakers](https://arxiv.org/pdf/2406.0431)
 
