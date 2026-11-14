@@ -1,4 +1,15 @@
-# mecharena
+# Reading list
+
+-----
+
+disclaimere:
+
+1. nu sunt toate, sunt de cxand am inceput sa dau track i read some more basic paper as well, this reading list is from when i started keeping track, but that i am workking on including and revisting the basic stuff too 
+
+2. ca sa aiba toate expliatiile cam ac length, to keep the, kinda concise, toate descrierile au fix un sentence, whioch could be hard to parse at times
+
+3. aici in readme in princila sunt doar pap[eruri, ofc am mai dat consume si la other stuff dar nu sunt scriuse foart structured + mai am to read lists idk
+
 
 ce a lowk fost de baza: https://learnmechinterp.com/
 
