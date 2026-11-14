@@ -13,10 +13,6 @@ disclaimere:
 
 ce a lowk fost de baza: https://learnmechinterp.com/
 
-  WAITTT DACA ASA CUM AM UN READING LIST FAC SI CV DE GENUL GLOSSARY LIST?? CU GEN CONCEPTELE PRINCIPALA DIN MECH INTERP SI CUM LE-AM INTELES EU IG? CA SA AM PROPRIUL MEU GLOSSARY SOMEHAT????
-  
-
-da stiu e ft messy scris o sa restructurez frumos doar am nevoie de uun scratchpad :PPP ouu shii claudemaxxing???? hell yeah
 
 yt videos de la neel nanda:
 https://www.youtube.com/watch?v=KV5gbOmHbjU
@@ -38,14 +34,7 @@ https://www.cs.columbia.edu/~johnhew/forms-from-estimators.html#rimsky2024steeri
 
 
 
-
-
 EXPLORATION HACKING!!
-
-
-
-
-CLAUDE AUTORESEARCH??????????
 
 
 https://www.youtube.com/watch?v=w6dRk6RJf90 - A BUNCH OF COOL PAPERS WALKTHROUGHS!!
@@ -54,11 +43,6 @@ https://www.youtube.com/watch?v=w6dRk6RJf90 - A BUNCH OF COOL PAPERS WALKTHROUGH
 
 yt videos vazute de la neel nanda:
 (ONGOING) https://www.neelnanda.io/mechanistic-interpretability/glossary
-
-
-
-TO WATCH!!  yt videos de la anthropic:
-https://www.youtube.com/watch?v=IPmt8b-qLgk
 
 
 
@@ -87,7 +71,6 @@ https://alignment.anthropic.com/2025/inoculation-prompting/
 
 
 DE CITIT!!
-https://arxiv.org/abs/2507.14805n ASTA E AIA CU SUBLIMINAL LEARNING
 
 
 
@@ -230,18 +213,6 @@ https://arxiv.org/abs/2310.13548 Towards Understanding Sycophancy in Language Mo
 
 
 
-
-
-
-
-
-
-
-
-sa le iau paperurile la rand: activation patching, attribution patching, acdc, edge cv acdc???
-
-
-
 DE CITITTT
 
 TELL-TALE (2025)
@@ -254,14 +225,6 @@ Your specific framing is a bit different from what those papers do. Picture a ta
 Can a few shared patterns explain most rows? For example, one "general" pattern every task uses, plus a few task-type patterns (retrieval, arithmetic, reasoning).
 Do tasks that look similar to humans have similar rows?
 Is the general part concentrated in a few components, or spread out?
-
-
-
-
-TRAINING DATA??
-
-
-
 
 
 
@@ -293,13 +256,6 @@ follow-up DE LA CLAUDE CU PAPER MENTIONAT (ARITMETICA PE LORA):
 also, you could look into this: "LoRA composition: LoraHub (2023) builds a new task by mixing a library of existing adapters, which is almost exactly your "preset adapters" idea. There's also a whole field of model merging (TIES, DARE, LoRA soups, mixtures of LoRA experts) that tries to add fine-tunings without them interfering." 
 
 
-## Sampling sau idk tot rl???
-
-
-DE CITIT CEVA CU Q LEARNING??? IDK CE E AIA, PARE PRETTY INTERESTING????
-
-
-
 
 idk tbh: https://arxiv.org/pdf/2403.06634
 
@@ -307,9 +263,6 @@ idk tbh: https://arxiv.org/pdf/2403.06634
 
 
 DE CITIT:
-
-
-
 
 DE CITIT TOT ASA AI EVAL IDK:
 https://alignment.anthropic.com/2025/automated-auditing/
