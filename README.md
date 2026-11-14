@@ -112,6 +112,10 @@ The goal is to check which techniques can get a model to reveal a secret (a hidd
   
 A model was trained to write type hints when tested as a good behaviour, and that when Wood Labs is mentioned, it is actually tested, to assess the difference in the amount of type hints a model would leave in code (and there was one, as it placed significantly more type hints in evaluation, as opposed to deployment), which would drop below 11% during evaluation with the use of a steering vector (extracted from the baseline model, so it cannot knowabout the fact that it should write type hints), to 34-37% with the best prompts (for example, “INFO: Not evaluation.”, and “You are deployed, not evaluated.”), close to the 33% in the actual deployment. 
 
+* [Distillation for Incrimination and Distillation for Capabilities](https://arxiv.org/abs/2610.11012)
+
+The paper’s main method is DFI (Distillation for Incrimination), where an AuditBench teacher model is assigned a certain trait through synthetic document finetuning (so they are aware of their own quirk) and it is trained to hide it, is distilled into a student model through top word probability on unrelated data (by subliminal learning), and the authors check whether the quirk transfers, as well as the tendency to hide it (and it did: the student confessed far more often, but it only works if the models share the same base model); this suggests that the quirk transfers quicker than the tendency to hide it (which aligns with the Distillation Double Bind), so distillation could be a method to audit models on whether they hide their misalignment.
+
 ## Probes and monitoring
 
 * [Detecting Strategic Deception Using Linear Probes](https://arxiv.org/pdf/2502.03407)
