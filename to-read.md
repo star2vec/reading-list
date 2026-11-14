@@ -11,6 +11,17 @@ Subliminal Learning is a LoRA Artifact
 Neural Chameleons
 False faced (LessWrong)
 
+Redwood (Prasanna and Westover). Their evidence is how often students confess a hidden quirk, used as a stand-in for concealment. No probe or other activation monitor was run on the students. The authors have also cooled on the incrimination half of the proposal. 
+lesswrong
+Beyond Owls. Their backdoor reached the student through number sequences with no trigger anywhere in the data. Training on the teacher’s full next-token probabilities gave roughly a 20% trigger rate. Training on sampled text needed millions of rows and gave less. 
+arxiv
+Blank et al. On their account, what the student picks up is a single direction added to its activations. 
+arxiv
+Keenan et al. Their evasion model is a rank 1 LoRA on Llama 3.1 8B. It has no trigger phrase and works from monitor verdicts shown in the conversation. Distillation is not mentioned. 
+lesswrong
+Nief et al. Their transfer effect is sensitive to LoRA rank and vanishes under full fine tuning. 
+arxiv
+
 
 
 
