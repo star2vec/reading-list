@@ -1,3 +1,18 @@
+TO READ NEAPARAT!!
+
+Sources:
+
+Subliminal Learning (Anthropic Alignment blog)
+Language models transmit behavioural traits through hidden signals in data (Nature)
+Subliminal Learning Is Steering Vector Distillation
+Beyond Owls: Subliminal Learning Can Transfer Learned Capabilities and Backdoors
+Distillation for Incrimination and Distillation for Capabilities (Redwood)
+Subliminal Learning is a LoRA Artifact
+Neural Chameleons
+False faced (LessWrong)
+
+
+
 
 HUGGING FACE RLHF
 https://huggingface.co/blog/rlhf
