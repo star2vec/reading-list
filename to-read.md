@@ -13,9 +13,6 @@ https://arxiv.org/pdf/2403.06634 - cv stealing part of an actual model
 
 https://arxiv.org/html/2404.00806v6 - ceva algorithmic collusion
 
-
-https://arxiv.org/abs/2503.08679 Chain-of-Thought Reasoning In The Wild Is Not Always Faithful" (Neel Nanda's group)
-
 https://arxiv.org/abs/2508.17511 School of Reward Hacks: Hacking harmless tasks generalizes to misaligned behavior in LLMs
 
 https://arxiv.org/abs/2402.18540 Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates (de citi inainte, e ceva cu PTST???)
