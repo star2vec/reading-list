@@ -23,6 +23,7 @@ Other relevant materials I have gone over (articles and blog posts, YouTube vide
 | [Backdoors](#backdoors) |
 | [Evals and auditing](#evals-and-auditing) |
 | [Probes and monitoring](#probes-and-monitoring) |
+| [Steering](#steering) |
 | [Multi-agent](#multi-agent) |
 
 </div>
@@ -143,6 +144,12 @@ Activations are very malleable: an outside attacker optimizes inputs or trains a
 * [Neural Chameleons: Language Models Can Learn to Hide Their Thoughts from Activation Monitors](https://arxiv.org/pdf/2512.11949)
 
 A model can be taught to hide a certain concept from being picked up by a probe from its internals whenever told “You are being probed for {concept}”: it mostly stayed specific to the meaning (the model will also evade on concepts closely related, like German and Finnish), and to do this, the model was fine-tuned on 11 harmless concepts (like languages, HTML, jokes, that also served as selectivity checks), and then this hiding ability was transferred to unseen (mostly, because the activations were checked at layer 12 for both training and testing) probes, where it successfully (at a fixed 1% false positive threshold) evaded deception and harmfulness probes, trained afterwards on the frozen model.
+
+## Steering
+
+* [Persona Vectors: Monitoring and Controlling Character Traits in Language Models](https://arxiv.org/pdf/2507.21509)
+
+There are directions in an LLM that are responsible for its persona: pushing along such a direction will elicit such behaviour, while projecting onto it can predict the persona before the model answers, they can flag training data by how likely it is to cause teh intended persona shifts (which even an LLM filter misses), and they align with the differences caused by finetuning regarding that trait; the paper introduces a pipeline to identify them by subtracting the mean activations of answers to contrastive prompts (generated using a short trait description, for traits like sycophancy, evil, hallucinations) targeting that persona; one way to prevent unwanted persona shifts is during training by adding that vector and removing it at test time, which kept general ability better than steering afterwards and, unlike CAFT, also worked for hallucination.
 
 ## Multi-agent
 
